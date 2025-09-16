@@ -86,3 +86,8 @@ h6 {
     color: $white;
     @include typeface-1(h6, desktop);
 }
+
+a {
+    color: $white;
+    @include typeface-1(h5, desktop);
+}

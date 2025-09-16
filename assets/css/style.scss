@@ -20,3 +20,20 @@ img {
     display: block;
     width: 100%;
 }
+
+a {
+    padding: $gap-1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    color: $white;
+    font-size: 1.5rem;
+}
+
+@import './section/header';
