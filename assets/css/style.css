@@ -324,13 +324,19 @@
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   text-align: center;
+}
+@media screen and (max-width: 960px) {
+  .container {
+    margin-bottom: 6rem;
+  }
 }
 
 .flex-spacebetween {
@@ -365,6 +371,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .mobile--width-80 {
+    width: 80%;
   }
 }
 
@@ -419,6 +431,13 @@
   .card__evento {
     max-width: 340px;
   }
+}
+
+.post__home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
 }
 
 h1 {
@@ -558,6 +577,35 @@ li {
 i {
   color: #FBFBFB;
   font-size: 1.5rem;
+}
+
+.tag {
+  text-transform: uppercase;
+  color: #13132E;
+  background: #34B834;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  top: 85%;
+  left: 2px;
+  width: 0%;
+  height: 2px;
+  background-color: #34B834;
+  transition: 0.3s ease;
+}
+.link:hover {
+  transform: scale(1.01);
+}
+.link:hover::after {
+  width: 95%;
 }
 
 header {

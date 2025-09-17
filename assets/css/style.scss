@@ -36,5 +36,38 @@ i {
     font-size: 1.5rem;
 }
 
+.tag {
+    text-transform: uppercase;
+    color: $black-light;
+    background: $primary;
+    padding: $gap-2 $gap-3;
+    border-radius: $gap-2;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 85%;
+        left: 2px;
+
+        width: 0%;
+        height: 2px;
+        background-color: $primary;
+
+        transition: .3s ease;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+        &::after {
+            width: 95%;
+        }
+    }
+}
+
 @import './section/header';
 @import './section/icons';
