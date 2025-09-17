@@ -21,3 +21,18 @@
 .btn__primary:hover {
     transform: scale(1.02);
 }
+
+.btn__secondary {
+    display: inline-block;
+    color: $primary;
+    background: $black-light;
+    padding: $gap-2 $gap-5;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.btn__secondary:hover {
+    transform: scale(1.01);
+    background: $primary;
+    color: $black-light;
+}

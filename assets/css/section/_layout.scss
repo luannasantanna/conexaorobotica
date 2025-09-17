@@ -52,6 +52,40 @@ $container-s: 540px;
     text-align: center;
 }
 
+.flex-spacebetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-fit--content {
+    width: fit-content;
+}
+
+.mobile--flex-col {
+    @include responsive(s) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $gap-4;
+    }
+}
+
 .bg-home {
     width: 100%;
     height: 100vh;
@@ -70,5 +104,36 @@ $container-s: 540px;
 
     @include responsive(s) {
         max-width: 350px;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: $gap-5;
+
+    @include responsive(s) {
+        gap: $gap-3;
+
+        >.card__evento:last-child {
+            display: none;
+        }
+    }
+
+    @include responsive(xs) {
+        flex-direction: column;
+    }
+}
+
+.card__evento {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+
+    @include responsive(s) {
+        max-width: 340px;
     }
 }
