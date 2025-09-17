@@ -1,0 +1,23 @@
+.btn__primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gap-1;
+    padding: $gap-2 $gap-5;
+
+    @include typeface-1(h4, desktop);
+
+    background-color: $primary;
+    color: $black;
+    border-radius: .5rem;
+
+    transition: .3s ease;
+}
+
+.btn__primary i {
+    color: $black;
+}
+
+.btn__primary:hover {
+    transform: scale(1.02);
+}

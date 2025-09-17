@@ -4,70 +4,6 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: #FBFBFB;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 120%;
-}
-@media screen and (max-width: 960px) {
-  h1 {
-    font-family: "Hanken Grotesk", sans-serif;
-    font-size: 2rem;
-    font-size: 1.5rem;
-    font-size: 1.125rem;
-  }
-}
-
-h2 {
-  color: #FBFBFB;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-h3 {
-  color: #FBFBFB;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-h4 {
-  color: #FBFBFB;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 140%;
-}
-
-h5 {
-  color: #FBFBFB;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 140%;
-}
-
-h6 {
-  color: #FBFBFB;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 140%;
-}
-
-a {
-  color: #FBFBFB;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 140%;
-}
-
 .s-0 {
   margin: 0;
   padding: 0;
@@ -375,6 +311,136 @@ a {
 .py-5 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.bg-home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../img/banner.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero {
+  max-width: 800px;
+}
+@media screen and (max-width: 960px) {
+  .hero {
+    max-width: 350px;
+  }
+}
+
+h1 {
+  color: #FBFBFB;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+@media screen and (max-width: 960px) {
+  h1 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  color: #FBFBFB;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+@media screen and (max-width: 960px) {
+  h2 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  color: #FBFBFB;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+@media screen and (max-width: 960px) {
+  h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.125rem;
+  }
+}
+
+h4 {
+  color: #FBFBFB;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+h5 {
+  color: #FBFBFB;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+h6 {
+  color: #FBFBFB;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+a {
+  color: #FBFBFB;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.btn__primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.5rem 2rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 140%;
+  background-color: #34B834;
+  color: #030318;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.btn__primary i {
+  color: #030318;
+}
+
+.btn__primary:hover {
+  transform: scale(1.02);
 }
 
 body {
