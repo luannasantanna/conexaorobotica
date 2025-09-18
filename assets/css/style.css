@@ -940,4 +940,48 @@ header {
 
 .photo5 {
   background-image: url("../img/myrobot.png");
+}
+
+footer {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-top: 1px solid #34B834;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 960px) {
+  .footer__content {
+    flex-direction: column;
+  }
+}
+
+footer img {
+  max-width: 260px;
+}
+
+.footer__midias-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 960px) {
+  .footer__midias-sociais {
+    flex-direction: row;
+    padding: 2rem;
+  }
+}
+
+.footer__midias-sociais i:hover {
+  color: #FBFBFB;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
