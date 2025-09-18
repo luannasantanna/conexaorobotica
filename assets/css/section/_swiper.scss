@@ -1,0 +1,98 @@
+.wrapper-container--grid {
+    max-width: $container-l;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+        'header buttons'
+        'swiper swiper'
+    ;
+    grid-template-columns: 1fr auto;
+
+    @include responsive(s) {
+        grid-template-areas: 
+            'header'
+            'swiper'
+            'buttons'
+        ;
+        grid-template-columns: 1fr;
+        padding: $gap-4;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    margin: 0 auto;
+
+    grid-area: swiper;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    position: relative;
+    overflow: hidden;
+
+    @include responsive(s) {
+        padding: $gap-2 $gap-2 0 $gap-2;
+    }
+}
+
+.wrapper-header {
+    grid-area: header;
+}
+
+.wrapper-buttons {
+    grid-area: buttons;
+
+    @include responsive(s) {
+        text-align: center;
+        margin-top: $gap-6;
+    }
+}
+
+.button-next, .button-prev {
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover {
+        border: 1px solid $primary;
+    }
+}
+
+.swiper-slide {
+    max-width: 380px;
+    height: 300px;
+    padding: $gap-4;
+    text-align: start;
+}
+
+.swiper-slide--titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: $gap-3;
+}
+
+.photo-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo1 {
+    background-image: url('../img/espacorobotica.png');
+}
+.photo2 {
+    background-image: url('../img/roboowl.jpeg');
+}
+.photo3 {
+    background-image: url('../img/br-ino.png');
+}
+.photo4 {
+    background-image: url('../img/codigokid.png');
+}
+.photo5 {
+    background-image: url('../img/myrobot.png');
+}

@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   </head>
 
   <body>
@@ -159,6 +161,99 @@
       </div>
     </section>
 
+    <!-- ===== APRENDA NA PRÁTICA ===== -->
+    <section class="wrapper-container--grid">
+      <div class="wrapper-header w-100">
+        <div class="flex-start">
+          <i class="ri-book-line icon-titulo mr-3"></i>
+          <h2>Aprenda na prática</h2>
+        </div>
+        <h6 class="color-gray mt-1">Aprenda com professores e experiências práticas em diferentes espaços.</h6>
+      </div>
+
+      <div class="wrapper-buttons">
+        <i class="button-prev ri-arrow-left-double-line icon-titulo mr-4"></i>
+        <i class="button-next ri-arrow-right-double-line icon-titulo"></i>
+      </div>
+
+      <section class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide--titulo mb-4">
+              <div class="photo-profile photo1"></div>
+              <div>
+                <h4>Espaço da Robótica</h4>
+                <h5>Sobradinho | Brasília - DF</h5>
+              </div>
+            </div>
+            <h4 class="swiper-slide--text color-gray">Uma escola de robótica educacional infantil que une tecnologia e imaginação, despertando a curiosidade das crianças pelo universo da ciência e da astronomia.</h4>
+            <a href="https://linktr.ee/espacodarobotica" target="_blank" class="btn__primary mt-4">Site Oficial</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide--titulo mb-4">
+              <div class="photo-profile photo2"></div>
+              <div>
+                <h4>Roboowl</h4>
+                <h5>Águas claras | Brasília - DF</h5>
+              </div>
+            </div>
+            <h4 class="swiper-slide--text color-gray">Construção básica e programação de robôs, utilizando kits da Lego Education. Capacitar o aluno a trabalhar com projetos, desenvolvendo sua própria pesquisa, objetivando a tomada de decisões, promovendo o trabalho em equipe, com diálogo e o respeito às diversidades.</h4>
+            <a href="https://www.roboowl.com.br/contato" target="_blank" class="btn__primary mt-4">Site Oficial</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide--titulo mb-4">
+              <div class="photo-profile photo3"></div>
+              <div>
+                <h4>Br.ino</h4>
+                <h5>BIOTIC | Brasília - DF</h5>
+              </div>
+            </div>
+            <h4 class="swiper-slide--text color-gray">A Jornada da Robótica é um curso que apresenta o universo da automação desde o básico e não requer pré-requisitos. Aprenda a construir projetos com Arduino para incorporar a cultura digital no seu dia a dia.</h4>
+            <a href="https://brino.cc" target="_blank" class="btn__primary mt-4">Site Oficial</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide--titulo mb-4">
+              <div class="photo-profile photo4"></div>
+              <div>
+                <h4>Código Kid</h4>
+                <h5>Guará | Brasília - DF</h5>
+              </div>
+            </div>
+            <h4 class="swiper-slide--text color-gray">Nosso curso KidRobot® conta com a mesma tecnologia utilizada por grandes empresas e até mesmo pela NASA para criação de protótipos robóticos. Os alunos irão aprender conceitos básicos de eletrônica, mecânica e programação, por meio da construção de um robô autônomo, com rotas de locomoção programadas.</h4>
+            <a href="https://www.codigokid.com.br/escola-de-programacao-e-robotica/Guará-DF" target="_blank" class="btn__primary mt-4">Site Oficial</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide--titulo mb-4">
+              <div class="photo-profile photo5"></div>
+              <div>
+                <h4>My Robot School</h4>
+                <h5>Águas Claras | Brasília - DF</h5>
+              </div>
+            </div>
+            <h4 class="swiper-slide--text color-gray"> uma escola que utiliza tecnologia de ponta para o ensino de robótica e programação. Na My Robot School nossos alunos de todas as idades podem materializar suas ideias, criando seus próprios projetos, aguçando sua criatividade e desenvolvendo uma visão tecnológica e construtiva sobre o futuro.</h4>
+            <a href="https://myrobot.com.br" target="_blank" class="btn__primary mt-4">Site Oficial</a>
+          </div>
+        </div>
+      </section>
+    </section>
+
     <script src="./js/main.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+      const swiper = new Swiper('.swiper-container', {
+          slidesPerView: 'auto',
+          grabCursor: true,
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+              type: 'progressbar',
+          },
+          navigation: {
+              nextEl: '.button-next',
+              prevEl: '.button-prev',
+          },
+      });
+    </script>
   </body>
 </html>

@@ -11,3 +11,11 @@ const showMenu = (toggleId, navId) => {
 }
 
 showMenu('bx-close', 'menu-mobile');
+
+document.querySelectorAll('.swiper-slide h4').forEach(el => {
+    const maxChars = 160; 
+    if (el.innerText.length > maxChars) {
+      el.innerText = el.innerText.slice(0, maxChars) + '...';
+    }
+  });
+  
