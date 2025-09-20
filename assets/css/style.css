@@ -61,6 +61,10 @@
   margin-top: 2rem;
 }
 
+.mt-6 {
+  margin-top: 6.25rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -984,4 +988,27 @@ footer img {
 .footer__midias-sociais i:hover {
   color: #FBFBFB;
   cursor: pointer;
+}
+
+.container__detalhes {
+  width: 100%;
+  margin: 0 auto;
+  padding: 350px 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .container__detalhes {
+    padding: 150px 100px;
+  }
+}
+
+.evento__bg-01 {
+  background-image: url(../img/bannerDetalhesEvento/robocore.png);
+}
+
+.evento__bg-02 {
+  background-image: url(../img/bannerDetalhesEvento/obr.png);
 }/*# sourceMappingURL=style.css.map */
