@@ -1011,4 +1011,12 @@ footer img {
 
 .evento__bg-02 {
   background-image: url(../img/bannerDetalhesEvento/obr.png);
+}
+
+.post01 {
+  background-image: url(../img/bannerBlog/combate.png);
+}
+
+.post02 {
+  background-image: url(../img/bannerBlog/seguelinha.png);
 }/*# sourceMappingURL=style.css.map */
