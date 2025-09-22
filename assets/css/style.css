@@ -365,6 +365,14 @@
   width: 100%;
 }
 
+.w-50 {
+  max-width: 50%;
+}
+
+.text-start {
+  text-align: start;
+}
+
 .flex-direction--spacebet {
   flex-direction: row;
   justify-content: space-between;
@@ -1019,4 +1027,61 @@ footer img {
 
 .post02 {
   background-image: url(../img/bannerBlog/seguelinha.png);
+}
+
+.container__voluntariado {
+  width: 100%;
+  margin: 0 auto;
+  padding: 250px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 960px) {
+  .container__voluntariado {
+    padding: 150px 100px;
+  }
+}
+
+.voluntariado {
+  background-color: #13132E;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 1140px) and (min-width: 960px) {
+  .voluntariado {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 960px) {
+  .voluntariado {
+    flex-direction: column;
+  }
+}
+
+.photo-voluntariado {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+
+.rcx {
+  background-image: url(../img/voluntariadoLogos/rcx.png);
+}
+
+.obr {
+  background-image: url(../img/voluntariadoLogos/obr.png);
+}
+
+.cbr {
+  background-image: url(../img/voluntariadoLogos/bsbti.png);
+}
+
+.fll {
+  background-image: url(../img/voluntariadoLogos/fll.png);
 }/*# sourceMappingURL=style.css.map */

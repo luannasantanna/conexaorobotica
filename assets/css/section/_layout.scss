@@ -79,6 +79,14 @@ $container-s: 540px;
     width: 100%;
 }
 
+.w-50 {
+    max-width: 50%;
+}
+
+.text-start {
+    text-align: start;
+}
+
 .flex-direction--spacebet {
     flex-direction: row;
     justify-content: space-between;

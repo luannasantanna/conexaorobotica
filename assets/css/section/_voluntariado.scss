@@ -1,0 +1,55 @@
+.container__voluntariado {
+    width: 100%;
+    margin: 0 auto;
+    padding: 250px 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $gap-5;
+
+    @include responsive(s) {
+        padding: 150px 100px;
+    }
+}
+
+.voluntariado { 
+  background-color: $black-light;
+  border-radius: $gap-2;
+  gap: $gap-2;
+
+  @include responsive(m) {
+    flex-direction: column;
+  }
+
+  @include responsive(s) {
+    flex-direction: column;
+  }
+}
+
+.photo-voluntariado {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-right: $gap-3;
+}
+
+.rcx {
+  background-image: url(../img/voluntariadoLogos/rcx.png);
+}
+
+.obr {
+  background-image: url(../img/voluntariadoLogos/obr.png);
+}
+
+.cbr {
+  background-image: url(../img/voluntariadoLogos/bsbti.png);
+}
+
+.fll {
+  background-image: url(../img/voluntariadoLogos/fll.png);
+}
